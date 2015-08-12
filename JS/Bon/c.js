@@ -1,7 +1,7 @@
 Crafty.c("C", {
         init: function() {
 		this.addComponent("2D, DOM, c");
-	    this.bind ("spawn", function(){
+	    	this.bind ("spawn", function(){
    		var random = (Math.random()*100);
    		if (random>0 && random<= 26){
    			this.attr({x : 6 * Settings.poligon, y : 1 * Settings.poligon})
@@ -15,7 +15,7 @@ Crafty.c("C", {
    		if (random>76 && random<= 101){
    			this.attr({x : 13 * Settings.poligon, y : 9 * Settings.poligon})
    		}
-   	})
+   		})
 		this.trigger("spawn");
-		},
+	},
 });
